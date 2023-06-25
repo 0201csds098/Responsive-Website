@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best online Food Delivery Service in india</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Merriweather:wght@900&display=swap"
+        rel="stylesheet">
+    <style>
+        /* style.css file */
+        /* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variable not recommened but still */
+:root {
+    --nav-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigationbar logo and img */
+#logo {
+    margin: 10px 34px;
+
+}
+
+#logo img {
+    width: 95%;
+    height: 60px;
+    margin: 3px 6px;
+}
+
+/* Navigationbar List Styling */
+#navbar ul {
+    display: flex;
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Merriweather', serif;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+#navbar ul li a:hover {
+    color: navy;
+    background-color: cornsilk;
+}
+
+/* Home SEction */
+#home {
+    display: flex;
+    height: 411px;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('../bg.1jpg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    top: 0px;
+    left: 0px;
+}
+
+#home h1 {
+    text-align: center;
+    color: black;
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Merriweather', serif;
+}
+
+#home p {
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Merriweather', serif;
+}
+
+/*Services Section*/
+#services{
+    display: flex;
+    margin: 34px;
+}
+#services .box{
+    border: 2px solid red;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: #f2f2f2;
+}
+#services .box img{
+    height: 156px;
+    margin: auto;
+    display: block;
+}
+#service .box p{
+    font-family: 'Merriweather', serif;
+}
+
+   
+  
+
+/* Clients Section */
+#client-section{
+    
+    position: relative;  /*jitni jgh chahiye content ko utni hi lega*/
+    
+
+}
+/* using pseudo selector for providing background image  */
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("../bg.2jpg.jpg"); 
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 124px;
+    margin: auto;
+}
+.client-item{
+    padding: 35px;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url(../bg.jpg.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#contact-box{
+    display: flex;
+    align-items: centre;
+    justify-content: center;
+}
+#contact-box input,
+#contact-box textarea{
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1.1rem;
+    border-radius: 9px;
+}
+#contact-box label{
+    font-size: 1.1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#contact-box form{
+    width: 30%;
+    margin: 5%;
+}
+.button{
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    margin: 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: palevioletred;
+    color: white;
+    padding: 5px;
+
+}
+.button:hover{
+    background-color: blueviolet;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+
+}
+
+
+/* Utility Classes */
+
+.h-primary {
+    font-size: 1.5rem;
+    padding: 12px;
+    font-family: 'Merriweather', serif;
+}
+
+.h-secondary {
+    font-size: 1.3rem;
+    padding: 12px;
+    font-family: 'Merriweather', serif;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: yellowgreen;
+}
+
+.centre {
+    text-align: center;
+}
+        /* end of style.css file */
+
+        /* START OF PHONE.CSS */
+        /* Navigation */
+#navbar{
+    flex-direction: column;
+
+}
+#navbar ul li a{
+    padding: 0px 7px;
+    font-size: 1rem;
+}
+
+/* Home section */
+#home{
+    height: 370px;
+    padding: 3px 28px;
+
+}
+#home::before{
+    height: 480px;
+}
+#home p{
+    font-size: 13px;
+}
+
+/* Servces section */
+#services{
+    flex-direction: column;
+
+}
+#services .box{
+    padding: 14px;
+    margin: 2px 0px;
+    margin-bottom: 20px;
+}
+
+/* Client section */
+#clients{
+    flex-wrap: wrap;
+}
+#clients img{
+    width: 66px;
+    padding: 0px 56px;
+    height: auto;
+}
+.h-primary{
+    font-size: 26px;
+
+}
+        /* END OF PHONE.CSS */
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png.png" alt="My Online Meal.com">
+        </div>
+
+        <ul>
+            <li class="item"><a>Home</a></li>
+            <li class="item"><a>Services</a></li>
+            <li class="item"><a>About Us</a></li>
+            <li class="item"><a>Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to MyOnlineMeal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorem</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button class="btn">Order Now</button>
+
+    </section>
+
+
+    <section class="services-container">
+        <h1 class="h-primary centre">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="1.png.jpg" alt="">
+                <h2 class="h-secondary centre">Food Ordering</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dicta mollitia quisquam atque, rem
+                    debitis iure aliquam odit minus? Molestiae vitae, optio doloremque ad atque adipisci repellat
+                    officiis
+                    doloribus in error aliquid modi ipsa?</p>
+            </div>
+            <div class="box">
+                <img src="4.png.jpg" alt="">
+                <h2 class="h-secondary centre">Desert Ordering</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dicta mollitia quisquam atque, rem
+                    debitis iure aliquam odit minus? Molestiae vitae, optio doloremque ad atque adipisci repellat
+                    officiis
+                    doloribus in error aliquid modi ipsa?</p>
+            </div>
+            <div class="box">
+                <img src="2.png.jpg" alt="">
+                <h2 class="h-secondary centre">Beverages Ordering</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dicta mollitia quisquam atque, rem
+                    debitis iure aliquam odit minus? Molestiae vitae, optio doloremque ad atque adipisci repellat
+                    officiis
+                    doloribus in error aliquid modi ipsa?</p>
+            </div>
+
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary centre">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="logo3.png.jpg" alt="Our Clients">
+            </div>
+            <div class="client-item">
+                <img src="logo1.png.jpg" alt="Our Clients">
+            </div>
+            <div class="client-item">
+                <img src="logo2.png.png" alt="Our Clients">
+            </div>
+            <div class="client-item">
+                <img src="logo4.png.jpg" alt="Our Clients">
+            </div>
+
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary centre">Contact Now</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name"> Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email"> Email: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone"> Phone no: </label>
+                    <input type="phone" name="name" id="name" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="message"> Message: </label>
+                    <textarea name="Message" id="" cols="30" rows="10"></textarea>
+                </div>
+                <button class="button">Submit</button>
+            </form>
+        </div>
+
+    </section>
+    <footer>
+        <div class="centre">
+            Copyright &copy; www.MyOnlineMeal.com. All right are reserved!
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
